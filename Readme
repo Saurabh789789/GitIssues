@@ -6,4 +6,4 @@
 6)I have used two files index.html and result.html to create the UI part and have integrated with backend
 7)The code is well commented to understand
 8)The code can be improved a lot in terms of fetching dat from github.The rest call can be made more specific to our requirement to reduce the number of calls to github api's.Also the request can be modified to get maximum data in one call to github api's rather than multiple calls.
-
+9)The application has been deployed using heroku.

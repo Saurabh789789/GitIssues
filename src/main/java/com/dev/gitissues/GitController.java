@@ -58,7 +58,7 @@ public class GitController {
 			filterData.put("since", new String(formattedTime2));
 			List<Issue> issues2=s.getIssues(split[3],split[4], filterData);
             
-			
+			model.addAttribute("total_number_of_Issues",totalIssue.size());
 			model.addAttribute("last_24_hour",issues1.size());
 			model.addAttribute("last_24_to_7_days",issues2.size()-issues1.size());
 			

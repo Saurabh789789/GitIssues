@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
-//A basic rest api
+//A rest controller with rest api's
 
 @Configuration
 @EnableWebMvc
@@ -67,6 +67,8 @@ public class GitController {
 			filterData.put("since", new String(formattedTime2));
 			List<Issue> issues2 = s.getIssues(split[3], split[4], filterData);
 
+			
+			//setting the result in model and accessing it in UI later in code
 			model.addAttribute("total_number_of_Issues", totalIssue.size());
 			model.addAttribute("last_24_hour", issues1.size());
 			model.addAttribute("last_24_to_7_days",

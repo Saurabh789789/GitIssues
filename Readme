@@ -9,4 +9,4 @@ The project uses github APIs to get the current open issues, closed issues etc f
 8)The code can be improved a lot in terms of fetching dat from github.The rest call can be made more specific to our requirement to reduce the number of calls to github api's.Also the request can be modified to get maximum data in one call to github api's rather than multiple calls.
 9)The application has been deployed using heroku.
 10)The sample input of application : https://github.com/Shippable/support/issues
-qqqPlease follow the input format to get correct output.
+Please follow the input format to get correct output.
